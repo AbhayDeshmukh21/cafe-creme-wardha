@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-06T00:12:00.000Z",
+  "title": "Design System: Café Crème Wardha",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Roasted Cacao",
+        "canonical": "#24130F",
+        "tonalRamp": ["#120806", "#24130F", "#3A211B", "#5C372E", "#8A564A", "#B9897D", "#DFC5BE", "#F5EFEB"]
+      },
+      "espresso": {
+        "role": "secondary",
+        "displayName": "Steamed Espresso",
+        "canonical": "#321D18",
+        "tonalRamp": ["#170C09", "#321D18", "#4A2D25", "#6F453A", "#9B6557", "#C4958A", "#E5C8C1", "#F7ECE9"]
+      },
+      "caramel": {
+        "role": "tertiary",
+        "displayName": "Warm Honey Caramel",
+        "canonical": "#B9895D",
+        "tonalRamp": ["#422D1B", "#6B492B", "#93663C", "#B9895D", "#CCA681", "#DEC3A7", "#EDE0D2", "#F9F5F0"]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Buttermilk Cream",
+        "canonical": "#F5EBDD",
+        "tonalRamp": ["#4F4335", "#786754", "#A28D76", "#CBB59D", "#E0CDB7", "#EFE2D1", "#F5EBDD", "#FAF5EE"]
+      },
+      "beige": {
+        "role": "neutral",
+        "displayName": "Sand Oat",
+        "canonical": "#E8D8C2",
+        "tonalRamp": ["#483D2F", "#6F5F4B", "#97836A", "#BEA88C", "#D5C2A8", "#E8D8C2", "#F2E8D9", "#FAF5ED"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Serif",
+        "purpose": "Hero and major impact titles with optional romantic italic accents."
+      },
+      "headline": {
+        "displayName": "Headline Serif",
+        "purpose": "Section titles and major editorial narrative markers."
+      },
+      "title": {
+        "displayName": "Title Serif",
+        "purpose": "Card titles, address highlights, and feature callouts."
+      },
+      "body": {
+        "displayName": "Body Sans",
+        "purpose": "Effortless narrative reading and descriptive paragraphs."
+      },
+      "label": {
+        "displayName": "Label Mono",
+        "purpose": "Uppercase tracking eyebrows, metadata tags, and button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-arch",
+        "value": "0 20px 50px rgba(50, 29, 24, 0.08)",
+        "purpose": "Soft atmospheric shadow under framed arched imagery."
+      },
+      {
+        "name": "panel-elevation",
+        "value": "0 24px 60px rgba(36, 19, 15, 0.14)",
+        "purpose": "Deep rich elevation under the dark roasted cacao review panel."
+      },
+      {
+        "name": "contact-core",
+        "value": "radial-gradient(ellipse at center, rgba(42, 18, 8, 0.62) 0%, rgba(76, 36, 15, 0) 82%)",
+        "purpose": "Grounded contact shadow directly under physical tabletop objects."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-power3",
+        "value": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "purpose": "Editorial GSAP entrance reveals and text staggered appearances."
+      },
+      {
+        "name": "ease-hover",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Snappy, spring-damped interaction on hover and podium selection."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "High-contrast dark roasted cacao pill button with tracking mono and directional arrow.",
+      "html": "<button class=\"ds-btn-primary\"><span>EXPLORE OUR MENU</span><svg class=\"ds-btn-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #24130F; color: #F5EBDD; font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.20em; padding: 14px 28px; border-radius: 9999px; border: none; cursor: pointer; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease; } .ds-btn-primary:hover { background-color: #321D18; } .ds-btn-arrow { width: 14px; height: 14px; transition: transform 0.2s ease; } .ds-btn-primary:hover .ds-btn-arrow { transform: translateX(3px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Warm cream pill button with subtle roasted espresso border.",
+      "html": "<button class=\"ds-btn-secondary\">FIND US</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; background-color: rgba(245, 235, 221, 0.65); color: #24130F; font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.20em; padding: 14px 28px; border-radius: 9999px; border: 1px solid rgba(50, 29, 24, 0.30); cursor: pointer; text-decoration: none; transition: all 0.2s ease; } .ds-btn-secondary:hover { background-color: #F5EBDD; border-color: #321D18; }"
+    },
+    {
+      "name": "Ghost Pill Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outline pill button used for secondary links and social navigation.",
+      "html": "<a href=\"#\" class=\"ds-btn-ghost\">INSTAGRAM</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #321D18; font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; padding: 8px 18px; border-radius: 9999px; border: 1px solid rgba(50, 29, 24, 0.30); cursor: pointer; text-decoration: none; transition: all 0.2s ease; } .ds-btn-ghost:hover { background-color: #321D18; color: #F5EBDD; border-color: #321D18; }"
+    },
+    {
+      "name": "Eyebrow Label",
+      "kind": "chip",
+      "refersTo": "label-eyebrow",
+      "description": "Artisanal uppercase monospace section eyebrow in warm caramel.",
+      "html": "<span class=\"ds-label-eyebrow\">OUR STORY — EST. WARDHA</span>",
+      "css": ".ds-label-eyebrow { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.24em; color: #B9895D; margin-bottom: 8px; }"
+    },
+    {
+      "name": "Arched Review Card",
+      "kind": "card",
+      "refersTo": "card-arch",
+      "description": "Dark roasted cacao architectural container with curved arch top.",
+      "html": "<div class=\"ds-card-arch\"><span class=\"ds-label-eyebrow\">GOOGLE REVIEWS</span><h3 class=\"ds-card-title\">Enjoyed Your Visit?</h3><p class=\"ds-card-text\">Your feedback makes us better. Share your experience with us.</p><a href=\"#\" class=\"ds-btn-ghost-light\"><span>LEAVE A REVIEW</span><svg class=\"ds-btn-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></a></div>",
+      "css": ".ds-card-arch { background-color: #24130F; color: #F5EBDD; border-radius: 140px 140px 20px 20px; padding: 48px 36px; box-shadow: 0 24px 60px rgba(36, 19, 15, 0.14); display: flex; flex-direction: column; gap: 16px; max-width: 420px; } .ds-card-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 400; line-height: 1.15; margin: 0; } .ds-card-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; color: rgba(232, 216, 194, 0.85); line-height: 1.6; margin: 0 0 16px 0; } .ds-btn-ghost-light { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; color: #F5EBDD; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.20em; padding: 12px 24px; border-radius: 9999px; border: 1px solid rgba(245, 235, 221, 0.25); cursor: pointer; text-decoration: none; transition: all 0.2s ease; width: fit-content; } .ds-btn-ghost-light:hover { background-color: #F5EBDD; color: #24130F; border-color: #F5EBDD; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sunlit Pâtisserie & Editorial Sanctuary",
+    "overview": "The visual language of Café Crème Wardha is rooted in warmth, unhurried indulgence, and editorial craft. Designed to evoke the aroma of freshly roasted cacao and the tactile pleasure of chilled desserts, the experience rejects sterile corporate minimalism and loud fast-food hyperbole in favor of an inviting, sensory aesthetic. Rich roasted tones of espresso and dark chocolate meet sunlit buttermilk cream surfaces, accented by warm honeyed caramel metadata and graceful calligraphic flourishes.",
+    "keyCharacteristics": [
+      "Warm Culinary Palette: Deep chocolate (#24130F) and espresso (#321D18) anchored on soft buttermilk cream (#F5EBDD) and sand oat (#E8D8C2).",
+      "Editorial Type Counterpoint: Literary serif display headlines paired with mechanical uppercase monospace tags and legible narrative sans.",
+      "Architectural Arches & Soft Curves: Rounded-full pill buttons and arched editorial imagery windows echo café portals and display domes.",
+      "Natural Tactile Depth: Layered tonal surfaces and grounded contact shadows replace harsh artificial drop shadows.",
+      "Sensory Motion: Smooth inertia scrolling (Lenis) and physics-based GSAP text reveals evoke a relaxed, comfortable dining environment."
+    ],
+    "rules": [
+      {
+        "name": "The Roasted Cacao Anchor Rule",
+        "body": "#24130F is reserved for foundational grounding elements (major headings, primary buttons, and hero frames). It anchors the eye and guarantees AAA legibility against cream backgrounds.",
+        "section": "colors"
+      },
+      {
+        "name": "The Caramel Accent Rule",
+        "body": "Warm Caramel (#B9895D) is an editorial punctuation mark. It is never used for lengthy body copy; its power comes from high-tracking uppercase labels and signature cursive moments.",
+        "section": "colors"
+      },
+      {
+        "name": "The Italic Accent Rule",
+        "body": "Display and Headline serifs always emphasize exactly one evocative word or phrase using italic serif styling (<em class=\"italic font-normal\">Happiness.</em>). This creates an artisanal editorial rhythm.",
+        "section": "typography"
+      },
+      {
+        "name": "The Monospace Eyebrow Rule",
+        "body": "Every major heading is preceded by an uppercase IBM Plex Mono eyebrow tracked at 0.20em - 0.26em in #B9895D or #321D18/80. It sets context before the headline speaks.",
+        "section": "typography"
+      },
+      {
+        "name": "The Grounded Surface Rule",
+        "body": "UI components do not float arbitrarily in white space; they sit with weight on warm cream foundations or emerge from dark roasted architectural cutouts.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Plastic Shadow Rule",
+        "body": "Shadows must never use desaturated pure black (rgba(0,0,0,x)). All shadows and blurs must carry warm espresso or roasted cacao undertones (rgba(50, 29, 24, x) or rgba(36, 19, 15, x)).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do anchor every section with #F5EBDD cream backgrounds or #24130F dark cacao architectural panels.",
+      "Do use IBM Plex Mono in uppercase with tracking 0.20em - 0.26em for all section eyebrows and metadata.",
+      "Do emphasize key editorial words in headlines with italic serif styling (<em class=\"italic font-normal\">...</em>).",
+      "Do use warm espresso tints (rgba(50, 29, 24, x)) for all drop shadows and blurred overlays.",
+      "Do use full pill radius (rounded-full) for all buttons and chips.",
+      "Do respect prefers-reduced-motion by reducing all GSAP and Lenis animations to instantaneous states."
+    ],
+    "donts": [
+      "Don't use cold grays, sterile corporate blues, or pure blacks (#000000).",
+      "Don't use sharp rectangular corners (rounded-none or rounded-sm) on interactive buttons.",
+      "Don't use raw un-tracked lowercase text for category labels or tags.",
+      "Don't add distracting neon badges, sticker overlays, or aggressive coupon banners.",
+      "Don't use harsh generic drop shadows (box-shadow: 0 10px 20px black)."
+    ]
+  }
+}
+

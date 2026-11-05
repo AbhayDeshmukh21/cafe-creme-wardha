@@ -1,0 +1,6 @@
+{
+  "name": "Café Crème Wardha — Lip Lickin' Happiness",
+  "description": "Experience Café Crème in Sawangi, Wardha, Maharashtra. Good coffee, signature Kuka creations, delicious cravings, and unforgettable moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
